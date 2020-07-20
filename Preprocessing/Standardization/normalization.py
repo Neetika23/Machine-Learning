@@ -1,8 +1,8 @@
 # Print out the variance of the Proline column
-print(np.var(wine[["Proline"]]))
+print(wine["Proline"].var())
 
 # Apply the log normalization function to the Proline column
 wine["Proline_log"] = np.log(wine["Proline"])
 
 # Check the variance of the normalized Proline column
-print(np.var(wine[["Proline_log"]]))
+print(wine["Proline_log"].var())
