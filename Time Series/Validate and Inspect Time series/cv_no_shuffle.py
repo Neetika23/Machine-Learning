@@ -14,3 +14,7 @@ for tr, tt in cv.split(X, y):
     
 # Custom function to quickly visualize predictions
 visualize_predictions(results)
+
+#This time, the predictions generated within each CV loop look 'smoother' 
+#than they were before - they look more like a real time series because you 
+#didn't shuffle the data. This is a good sanity check to make sure your CV splits are correct.
