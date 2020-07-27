@@ -5,3 +5,4 @@ y = prices_perc.fillna(np.mean(prices_perc))
 # Fit the model
 model = Ridge()
 model.fit(X, y)
+
